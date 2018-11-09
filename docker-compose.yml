@@ -2,6 +2,7 @@ version: '3'
 services:
   golang:
     build:  golang/
+    tty:  true
     ports:
       - "8080:8080"
     volumes:
@@ -9,4 +10,4 @@ services:
 
   scala:
     build:  scala/
-    tty: true
+    tty:  true
