@@ -6,3 +6,7 @@ services:
       - "8080:8080"
     volumes:
       - ./golang/app:/go/
+
+  scala:
+    build:  scala/
+    tty: true
